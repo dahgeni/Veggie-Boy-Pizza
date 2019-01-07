@@ -29,11 +29,21 @@ code {
 .menu-ul {
   list-style-type: none;
   margin: 0;
-  float: right;
-  margin-right: 40px; 
+  float: left;
+  margin-right: 20px; 
 }
 .menu-ul li {
-  display: inline-block; margin-left: 40px;
+  display: inline-block; margin-left: 10px;
+}
+.menu-ul2 {
+  list-style-type: none;
+  float: right;
+  margin-left: 20px; 
+  margin-inline-end: 40px;
+}
+
+ .menu-ul2 li {
+display: inline-block; margin-left: 20px;
 }
 
 .font-white {
@@ -43,6 +53,55 @@ code {
    width: 100%;
    padding-top: 100px;
 
-  
+}
+.customColor {
+  text-align: center;
+  color: #a52a2a;
 }
 
+
+.circle {
+
+  width: 250px;
+  height: 250px;
+ background-image: url("./images/pizzaboard.jpg");
+  -moz-border-radius: 150px; 
+  -webkit-border-radius: 150px; 
+  border-radius: 150px;
+  border: 5px solid green;
+}
+
+.in-front {
+  z-index: 20;
+}
+
+.container {
+  width: 50%;
+  height: 20%;
+}
+
+.big-font {
+  font-size: 40px;
+  font-weight: 1000;
+  white-space: wrap;
+}
+
+.center {
+  display: block;
+  margin: 0;
+  margin-right: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.order {
+  display: block;
+  margin: 0;
+  margin-right: 0;
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
