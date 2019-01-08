@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Footer from '../Layout/Footer'
 import "../../index.css"
 
 
@@ -7,7 +6,7 @@ import "../../index.css"
 class Home extends Component {
   render() {
     return (
-        
+       
       <div className="background">
         <h1 className="font-white">Welcome To
         <em> Veggie Boy</em> Pizza!</h1>
@@ -17,7 +16,6 @@ class Home extends Component {
         </div>
       </div>
 
-      <Footer />
       </div>
     )
   }
