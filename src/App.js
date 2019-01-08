@@ -5,6 +5,7 @@ import Register from './components/Home/Register';
 import About from './components/pages/About';
 import Login from './components/Home/Login';
 import Header from './components/headerComponent/Header';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -20,9 +21,11 @@ class App extends Component {
           <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
+          
         </Switch>
       </div>
     </Router>
+    
                            
     )
   }

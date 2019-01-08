@@ -105,3 +105,11 @@ display: inline-block; margin-left: 20px;
   left: 80%;
   transform: translate(-50%, -50%);
 }
+
+.footer {
+  background: brown;
+}
+
+#credit-image {
+  width: 200px
+}

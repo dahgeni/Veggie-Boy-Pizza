@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Footer from '../Layout/Footer'
 import "../../index.css"
 
 
@@ -15,6 +16,8 @@ class Home extends Component {
           <button className="customColor center btn big-font ">Place Order Here!</button>
         </div>
       </div>
+
+      <Footer />
       </div>
     )
   }
