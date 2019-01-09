@@ -8,6 +8,7 @@ class Header extends Component {
     return (
       <div className="container-fluid">
           <ul className="menu-ul pt-3">
+          <li><Link to= "/"><h4>Home</h4></Link></li>
            <li><Link to= "/menu"><h4>Menu</h4></Link></li>
            <li><Link to= "/about"><h4 >Order</h4></Link></li>
             <li><Link to= "/about"><h4>About</h4></Link></li>
