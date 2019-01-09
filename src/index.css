@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: brown;
 }
 
 code {
@@ -113,3 +114,25 @@ display: inline-block; margin-left: 20px;
 #credit-image {
   width: 200px
 }
+
+#ticker {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+H1{
+    text-align:center;
+    text-decoration:underline;
+}
+button{
+    float:right
+}
+span{
+    float:right;
+  
+}
+body {
+  margin-left:7%;
+  margin-right:2%;
+
+  }

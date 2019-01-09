@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 //components
 import "../../index.css"
 import {Link} from 'react-router-dom';
-
 class Header extends Component {
   render() {
     return (
@@ -16,6 +15,7 @@ class Header extends Component {
           <li><Link to="/login"><h4>Existing Customer</h4></Link></li>
           <li><Link to="/login"><h4>New Customer</h4></Link></li>
         </ul>
+     
       </div>
     );
   }
