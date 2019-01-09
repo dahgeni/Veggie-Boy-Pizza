@@ -64,36 +64,37 @@ export default class Login extends Component {
 
   render() {
     return (
-      
-<div className= "container">
-    <h1> Customer Login</h1>
-
-    <form onSubmit={this.onSubmit}> 
-      {this.state.errors.match &&(<div className="alert alert-danger">the username and password do not match our records; please try again</div>
-      )}
-
-        <div className="form-group">
-            <input className="form-control" name="username" type="text" placeholder="username" value={this.state.username} 
-            onChange = {this.onchange} />
-            </div>
-
-        {this.state.errors.username && ( <div className="alert alert-warning">{this.state.errors.username}
-        </div> 
-        )}
-        <div className="form-group">
-            <input className="form-control"  name="password"type="password" placeholder="password" value={this.state.password} 
-            onChange={this.onChange} />
+        <div className= "container pt-4">
+            <h1> Existing Customer </h1> 
+            <br/>
+            <form onSubmit={this.onSubmit}> 
+                {this.state.errors.match &&(
+                <div className="alert alert-danger">
+                    the username and password do not match our records; please try again
+                </div>
+                )}
+                <div className="form-group">
+                    <input className="form-control" name="username" type="text" placeholder="username" value={this.state.username} 
+                    onChange = {this.onchange} />
+                </div>
+                {this.state.errors.username && (
+                <div className="alert alert-warning">
+                    {this.state.errors.username}
+                </div> 
+                )}
+                <div className="form-group">
+                    <input className="form-control"  name="password"type="password" placeholder="password" value={this.state.password} 
+                    onChange={this.onChange} />
+                </div>
+                {this.state.errors.password && ( 
+                <div className="alert alert-warning">
+                    {this.state.errors.password}
+                </div>
+                )}
+                <button type="submit" className="btn btn-primary btn-block">Login</button>
+                <Link to= "/register" className="btn btn-success btn-block">Register</Link>
+            </form>
         </div>
-
-        {this.state.errors.password && ( 
-          <div className="alert alert-warning">{this.state.errors.password}</div>
-    )}
-        <button type="submit" className="btn btn-primary btn-block">Login</button>
-
-        <Link to= "/register" className="btn btn-success btn-block">Register</Link>
-   
-      </form>
- </div>
     );
   }
 }

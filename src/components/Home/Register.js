@@ -4,8 +4,9 @@ import {Link} from 'react-router-dom';
 export default class Register extends Component {
   render() {
     return (   
-            <div className= "container ">
+            <div className= "container pt-4 ">
             <h1>New Customer Register</h1>
+            <br />
             <form> 
                     <div className="alert alert-danger"> this Username is taken, please try another one</div>
                     <div className="alert alert-danger"> two password are not matched></div>
