@@ -40,7 +40,6 @@
 
 
 .circle {
-
   width: 250px;
   height: 250px;
  background-image: url("./images/pizzaboard.jpg");
@@ -90,9 +89,17 @@
 }
 
 #credit-image {
+  position: absolute;
+  right: 150px;
   width: 200px
+  
 }
-
+#brick{
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  
+}
 #ticker {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
