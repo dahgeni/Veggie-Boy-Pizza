@@ -137,3 +137,11 @@ body {
 .border {
   border: 6px solid brown;
 }
+
+.body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  
+}
+
+
