@@ -134,4 +134,6 @@ body {
   float: right;
 }
 
-
+.border {
+  border: 6px solid brown;
+}

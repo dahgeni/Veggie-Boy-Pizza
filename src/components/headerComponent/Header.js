@@ -19,11 +19,13 @@ class Header extends Component {
             <Link to="/login" class="nav-item nav-link">Existing Customer</Link>
             <Link to="/register" class="nav-item nav-link">New Customer</Link>
                      <div className="white-font" id="brick">
-            <h4>Brick Oven Pizza</h4>
-            </div>
+                  
+           <h4>Brick Oven Pizza</h4>
+                         <h4>1-800-My- Pizza</h4>
+               </div>               
+             </div>
           </div>
-         </div>
-         </nav>
+        </nav>
     );
   }
 }
