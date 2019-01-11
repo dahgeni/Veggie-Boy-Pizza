@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
-import { npost } from 'q';
+
 
 export default class Register extends Component {
 
