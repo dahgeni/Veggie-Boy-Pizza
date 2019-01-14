@@ -7,7 +7,7 @@ import Login from './components/Home/Login';
 import Order from './components/Home/Order';
 import Header from './components/headerComponent/Header';
 import Footer from './components/Layout/Footer';
-
+import Profile from './components/Home/Profile';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -24,6 +24,7 @@ class App extends Component {
           <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/profile" component={Profile} />
         </Switch>
         <Footer />
       </div>

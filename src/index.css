@@ -137,3 +137,10 @@ body {
 .border {
   border: 6px solid brown;
 }
+
+.color-white {
+  color: white;
+}
+.bg-transparent {
+  background: transparent;
+}
