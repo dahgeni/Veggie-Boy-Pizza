@@ -16,6 +16,7 @@ class Header extends Component {
             <Link to="/menu" class="nav-item nav-link">Menu</Link>
             <Link to="/order" class="nav-item nav-link">Order</Link>
             <Link to="/about" class="nav-item nav-link">About</Link>
+            <Link to="/reservation" class="nav-item nav-link">Reservation</Link>
             <Link to="/login" class="nav-item nav-link">Existing Customer</Link>
             <Link to="/register" class="nav-item nav-link">New Customer</Link>
                      <div className="white-font" id="brick">

@@ -4,7 +4,7 @@ import React, { Component } from 'react'
  class Footer extends Component {
   render() {
     return (
-        
+      
       <div classname="container-fluid">
         <ul className="nav fixed-bottom footer">
             <li className="nav-item">

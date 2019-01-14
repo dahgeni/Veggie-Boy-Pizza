@@ -5,6 +5,7 @@ import Register from './components/Home/Register';
 import About from './components/pages/About';
 import Login from './components/Home/Login';
 import Order from './components/Home/Order';
+import Reservation from './components/Home/Reservation';
 import Header from './components/headerComponent/Header';
 import Footer from './components/Layout/Footer';
 
@@ -21,7 +22,9 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/order" component={Menu} />
-          <Route exact path="/register" component={Register} />
+          <Route exact path="/register" component=
+          {Register} />
+          <Route exact path="/reservation" component={Reservation} />
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
         </Switch>
