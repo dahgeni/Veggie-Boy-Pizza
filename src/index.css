@@ -8,6 +8,13 @@
   background-position: center;
   background-size: cover;
 }
+ #reservationbg {
+  background-image: url("./images/restaurantseating.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .header {
   display: block;

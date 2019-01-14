@@ -3,6 +3,7 @@ import React, { Component } from 'react'
     class Reservation extends Component {
   render() {
     return (
+      <div className="background " id="reservationbg">
       <div className= "container"> 
       <div className="font-white">
       <h1> Reserve A Table </h1> 
@@ -33,6 +34,7 @@ import React, { Component } from 'react'
                    
      <button className="btn btn-danger btn-dark">Submit</button>
      <br />
+     </div>
      </div>
      </div>
     )
