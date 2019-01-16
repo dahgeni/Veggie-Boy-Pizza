@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 
+
 export default class Register extends Component {
+
+    constructor(props) {
+        super(props);
+    }
   render() {
     return (   
             <div className= "container ">
-            <h1>New Customer Register</h1>
+            <h1>Register</h1>
             <form> 
                     <div className="alert alert-danger"> this Username is taken, please try another one</div>
                     <div className="alert alert-danger"> two password are not matched></div>

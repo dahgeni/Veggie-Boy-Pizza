@@ -15,15 +15,7 @@ export default class Login extends Component {
     
     
     onChange = e => {
-    //  if(e.target.name === "username") {
-    //     this.setState({
-    //         username: e.target.value
-    //     })} else {
-    //         this.setState({
-    //             password: e.target.value
-    //         });
-    //       }
-    //    };
+   
         this.setState({
             [e.target.name]: e.target.value
 
@@ -31,6 +23,7 @@ export default class Login extends Component {
     }
 
     onSubmit = e => {
+        const {username, password} =this.state
         e.preventDefault();
         if(this.state.username === '') {
             this.setState({
@@ -38,14 +31,14 @@ export default class Login extends Component {
             });
             return;
         }
-        if (this.state.password === "") {
+        if (password === "") {
                 this.setState({
                     errors: { password: "Password is Required"}
                 });
                 return;
     
         }
-        this.login(this.state.username, this.state.password)
+        this.login(username, password)
     };
   login = async (username, password) => {
    const user = {username, password
@@ -63,37 +56,42 @@ export default class Login extends Component {
 };
 
   render() {
+      const { username, password, errors } = this.state;
     return (
-      
-<div className= "container">
-    <h1> Customer Login</h1>
-
-    <form onSubmit={this.onSubmit}> 
-      {this.state.errors.match &&(<div className="alert alert-danger">the username and password do not match our records; please try again</div>
-      )}
-
-        <div className="form-group">
-            <input className="form-control" name="username" type="text" placeholder="username" value={this.state.username} 
-            onChange = {this.onchange} />
-            </div>
-
-        {this.state.errors.username && ( <div className="alert alert-warning">{this.state.errors.username}
-        </div> 
-        )}
-        <div className="form-group">
-            <input className="form-control"  name="password"type="password" placeholder="password" value={this.state.password} 
-            onChange={this.onChange} />
+        <div className= "container pt-4">
+        <div className="font-white">
+            <h1> Existing Customer </h1> 
+            <br/>
+            <form onSubmit={this.onSubmit}> 
+                {errors.match &&(
+                <div className="alert alert-danger">
+                    the username and password do not match our records; please try again
+                </div>
+                )}
+                <div className="form-group">
+                    <input className="form-control" name="username" type="text" placeholder="username" value={username} 
+                    onChange = {this.onchange} />
+                </div>
+                {errors.username && (
+                <div className="alert alert-warning">
+                    {errors.username}
+                    {errors.match}
+                </div> 
+                )}
+                <div className="form-group">
+                    <input className="form-control"  name="password"type="password" placeholder="password" value={password} 
+                    onChange={this.onChange} />
+                </div>
+                {errors.password && ( 
+                <div className="alert alert-warning">
+                    {errors.password}
+                </div>
+                )}
+                <button type="submit" className="btn btn-primary btn-block">Login</button>
+                <Link to= "/register" className="btn btn-success btn-block">Register</Link>
+            </form>
         </div>
-
-        {this.state.errors.password && ( 
-          <div className="alert alert-warning">{this.state.errors.password}</div>
-    )}
-        <button type="submit" className="btn btn-primary btn-block">Login</button>
-
-        <Link to= "/register" className="btn btn-success btn-block">Register</Link>
-   
-      </form>
- </div>
+        </div>
     );
   }
 }

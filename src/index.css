@@ -1,8 +1,5 @@
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 
 .background {
   background-image: url("./images/brickoven.jpg");
@@ -17,24 +14,10 @@ code {
   width: 100px;
   background: brown;
 }
-.menu-ul {
-  list-style-type: none;
-  margin: 0;
-  float: left;
-  margin-right: 20px; 
-}
-.menu-ul li {
-  display: inline-block; margin-left: 10px;
-}
-.menu-ul2 {
-  list-style-type: none;
-  float: right;
-  margin-left: 20px; 
-  margin-inline-end: 40px;
-}
 
- .menu-ul2 li {
-display: inline-block; margin-left: 20px;
+#navbar-bg {
+  background: brown;
+  
 }
 
 .font-white {
@@ -57,7 +40,6 @@ display: inline-block; margin-left: 20px;
 
 
 .circle {
-
   width: 250px;
   height: 250px;
  background-image: url("./images/pizzaboard.jpg");
@@ -107,9 +89,17 @@ display: inline-block; margin-left: 20px;
 }
 
 #credit-image {
+  position: absolute;
+  right: 150px;
   width: 200px
+  
 }
-
+#brick{
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  
+}
 #ticker {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -137,7 +127,7 @@ body {
   width: 350px;
   background-color: brown;
   border: 3px solid green;
-  padding: 70px;
+   padding: 70px;
   opacity: 0.6;
   
 }
@@ -154,4 +144,11 @@ body {
   transform: translate(-50%, -50%) }
 .container3 {
   text-align: center;
+}
+#move {
+  float: right
+}
+
+.border {
+  border: 6px solid brown;
 }

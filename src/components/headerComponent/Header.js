@@ -5,19 +5,27 @@ import {Link} from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
-      <div className="container-fluid">
-          <ul className="menu-ul pt-3">
-          <li><Link to= "/"><h4>Home</h4></Link></li>
-           <li><Link to= "/menu"><h4>Menu</h4></Link></li>
-           <li><Link to= "/about"><h4 >Order</h4></Link></li>
-            <li><Link to= "/about"><h4>About</h4></Link></li>
-        </ul>
-          <ul className="menu-ul2 pt-3">
-          <li><Link to="/login"><h4>Existing Customer</h4></Link></li>
-          <li><Link to="/login"><h4>New Customer</h4></Link></li>
-        </ul>
-     
-      </div>
+      <nav className="navbar navbar-expand-lg navbar-dark" id="navbar-bg">
+        <a className="navbar-brand" href="#"></a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <Link to="/" class="nav-item nav-link">Home</Link>
+            <Link to="/menu" class="nav-item nav-link">Menu</Link>
+            <Link to="/order" class="nav-item nav-link">Order</Link>
+            <Link to="/about" class="nav-item nav-link">About</Link>
+            <Link to="/login" class="nav-item nav-link">Existing Customer</Link>
+            <Link to="/register" class="nav-item nav-link">New Customer</Link>
+                     <div className="white-font" id="brick">
+                  
+           <h4>Brick Oven Pizza</h4>
+                         <h4>1-800-My- Pizza</h4>
+               </div>               
+             </div>
+          </div>
+        </nav>
     );
   }
 }
