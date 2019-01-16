@@ -46,7 +46,7 @@ import React, { Component } from 'react'
                 </button>
               </div>
               <h3 className="modal-body" >
-                Your Table Has Been Reserve. Thanks For Your Business!
+                Your Table Has Been Reserved. We Appreciate Your Business!
               </h3>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
