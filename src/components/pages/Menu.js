@@ -7,7 +7,7 @@ import Login from '../Home/Login';
 
 
  class Menu extends Component {
-  render() {
+  render() {  
     return (
   <div className="container-fluid">
          <div id="tickerwrap">
@@ -15,10 +15,10 @@ import Login from '../Home/Login';
         Welcome to Veggie Boy Pizza. We make the best pizza 
         </marquee>
   </div>
-
+ 
 <h1>The Menu</h1>
 <h4>Pepper Pizza</h4>
-< img src={require( "../../images/pepper.jpg")} alt= "pepper pizza" width="200" height="150"/>
+< img src={require( "../../images/pepper.jpg")} alt="pepper pizza" width="200" height="150"/>
 <hr/>
 <div>
     <p>
