@@ -12,7 +12,7 @@ class About extends Component {
         <hr/>      
         <ul className="list-group">
             <li className="list-group">
-             <Link to="/login">Place Your Online Order Here</Link>                             
+             <Link to="/menu">Place Your Online Order Here</Link>                             
             </li> 
              <br></br>                            
            <div className="form-group">
