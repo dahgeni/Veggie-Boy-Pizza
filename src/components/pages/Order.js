@@ -3,7 +3,7 @@ import "../../index.css"
 import {Link} from 'react-router-dom'; 
 import Home from '../Home/Home';
 import Register from '../Home/Register';
-import About from '../pages/About';
+import About from './About';
 import Login from '../Home/Login';
 
 const Order = () => {

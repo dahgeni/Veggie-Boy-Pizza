@@ -7,8 +7,9 @@ import Login from './components/Home/Login';
 import Header from './components/headerComponent/Header';
 import Footer from './components/Layout/Footer';
 import Order from './components/pages/Order';
-import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import {Link} from "react-router-dom"
+import Profile from './components/Home/Profile';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 class App extends Component {
@@ -20,11 +21,11 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Menu} />
-      
+          <Route exact path="/order" component={Order} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/order" component={Order}/>
+          <Route exact path="/profile" component={Profile} />
         </Switch>
         <Footer />
       </div>

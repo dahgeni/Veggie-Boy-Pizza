@@ -156,3 +156,9 @@ body {
 .app {
   padding-bottom: 75px
 }
+.color-white {
+  color: white;
+}
+.bg-transparent {
+  background: transparent;
+}
