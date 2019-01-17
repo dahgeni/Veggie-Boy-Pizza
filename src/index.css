@@ -152,3 +152,7 @@ body {
 .border {
   border: 6px solid brown;
 }
+
+.app {
+  padding-bottom: 75px
+}

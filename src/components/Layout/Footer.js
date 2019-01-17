@@ -5,7 +5,7 @@ import React, { Component } from 'react'
   render() {
     return (
         
-      <div classname="container-fluid">
+      <div classame="container-fluid">
         <ul className="nav fixed-bottom footer">
             <li className="nav-item">
             <h5 className="nav-link white-font" >Veggie Boy Pizza Inc.</h5>

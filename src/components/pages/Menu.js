@@ -3,13 +3,15 @@ import Home from '../Home/Home';
 import Register from '../Home/Register';
 import About from '../pages/About';
 import Login from '../Home/Login';
+import {Link} from "react-router-dom"
 
 
 
  class Menu extends Component {
   render() {
     return (
-  <div className="container-fluid">
+  
+  <div className="container">
          <div id="tickerwrap">
     <marquee id="ticker">
         Welcome to Veggie Boy Pizza. We make the best pizza 
@@ -18,6 +20,7 @@ import Login from '../Home/Login';
 
 <h1>The Menu</h1>
 <h4>Pepper Pizza</h4>
+<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
 < img src={require( "../../images/pepper.jpg")} alt= "pepper pizza" width="200" height="150"/>
 <hr/>
 <div>
@@ -26,11 +29,12 @@ import Login from '../Home/Login';
 
     </p>
     <hr/> 
-    <button className="onClick"> Order Now</button>
-  
+
+
 <br/>
 <h4>Cheese Pizza</h4>
 
+<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
 < img src= {require ("../../images/cheesepizza.jpg")} alt= "cheese pizza" width="200" height="150"/>
  
 <hr/>
@@ -40,10 +44,11 @@ import Login from '../Home/Login';
     </p>
     <hr/>
 </div>
-<button className="onClick"> Order Now</button>
+
 
 <br/>
 <h4>Onion Pizza</h4>
+<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
 < img src= {require( "../../images/onion.jpg")} alt= "onion pizza" width="200" height="150"/>
 <hr/>
 <div>
@@ -52,9 +57,10 @@ import Login from '../Home/Login';
     </p>
     <hr/>
 </div>
-<button className="onClick"> Order Now</button>
+
 <br/>
 <h4>Mushroom Pizza</h4>
+<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
 <img src={require("../../images/mushroom.jpg")} alt="mushroom pizza" width="200" height="150"/>
 <hr/>
 <div>
@@ -63,7 +69,7 @@ import Login from '../Home/Login';
     </p>
     <hr/>
 </div>
-<button className="onClick"> Order Now</button>
+
 <br/>
       </div>
   </div>
