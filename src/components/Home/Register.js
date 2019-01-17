@@ -112,6 +112,7 @@ export default class Register extends Component {
 
         <InputGroup
             name="password"
+            type="password"
             placeholder="Password"
             value={password}
             onChange={this.onChange}
@@ -127,6 +128,7 @@ export default class Register extends Component {
         <InputGroup
             name="verifyPassword"
             placeholder="Verify Password"
+            type="password"
             value={verifyPassword}
             onChange={this.onChange}
             

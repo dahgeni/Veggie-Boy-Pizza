@@ -101,21 +101,22 @@ updateUser = async newUser => {
         
     return (
     <div>
-        <nav className="navbar navbar-dark bg-primary fixed-top">
+        {/* <nav className="navbar navbar-dark bg-primary fixed-top">
           <Link to="/profile"
           className="navbar-brand">
           <b>Profile</b>
           </Link>         
-           <button
+           {/* <button
             className= "btn color-white bg-transparent"
             type="submit"
              form="myForm">
              <i className="fas fa-check"></i>
-             </button>
-      </nav>
-      <br/>                   
-    
-        <div style={{paddingTop:'20px'}} className="container">
+             </button> */}
+      {/* </nav> */} 
+       <br/>                   
+       <br />
+       <br />
+        <div style={{paddingTop:'5px'}} className="container">
           <form id="myForm" onSubmit={this.onSubmit}>
               {errors.taken && (
                 <div className= "alert alert-danger">
@@ -179,14 +180,16 @@ updateUser = async newUser => {
            <br />
            <br />
            <br />
-            <Link to="/user-list"
-             className="btn btn-primary btn-outline-dark"
-             >User List
-            </Link>
+           <button
+            className= "btn color-white bg-dark"
+            type="submit"
+             form="myForm">
+             <i className="fas fa-check"></i> Update
+             </button>
           </form>
         </div> 
         <Footer />   
-      </div>
+       </div>
     );
   }
 }
