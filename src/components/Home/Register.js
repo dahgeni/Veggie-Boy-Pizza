@@ -104,6 +104,7 @@ export default class Register extends Component {
             onChange={this.onChange}
           
         /> 
+        <div/>
             {errors.username && (
         <div className= "alert alert-warning">
             {errors.username}
@@ -112,12 +113,13 @@ export default class Register extends Component {
 
         <InputGroup
             name="password"
+            type="password"
             placeholder="Password"
             value={password}
             onChange={this.onChange}
             
         /> 
-
+        <div/>
             {errors.password && (
         <div className= "alert alert-warning">
                {errors.password}
@@ -127,11 +129,12 @@ export default class Register extends Component {
         <InputGroup
             name="verifyPassword"
             placeholder="Verify Password"
+            type="password"
             value={verifyPassword}
             onChange={this.onChange}
             
         />
-
+        <div/>
             {errors.verifyPassword && (
         <div className= "alert alert-warning">
             {errors.verifyPassword}

@@ -69,6 +69,7 @@ export default class Login extends Component {
                     The username and password do not match our records; please try again
                 </div>
                 )}
+                
                 <div className="form-group">
                     <input className="form-control"
                      name="username"
@@ -76,6 +77,7 @@ export default class Login extends Component {
                        placeholder="Username" 
                        value={username} 
                     onChange = {this.onChange} />
+
                 </div>
                 {errors.username && (
                 <div className="alert alert-warning">
@@ -83,6 +85,7 @@ export default class Login extends Component {
                     {errors.match}
                 </div> 
                 )}
+
                 <div className="form-group">
                     <input 
                     className="form-control" 
