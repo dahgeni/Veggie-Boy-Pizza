@@ -72,7 +72,7 @@ export default class Register extends Component {
        } else {
            const user = {username, password};
            await axios.post("/api/register", user);
-           this.props.history.push("/profile");
+           this.props.history.push(`/profile`);
        }
     }
 

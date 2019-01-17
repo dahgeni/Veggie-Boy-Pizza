@@ -9,7 +9,7 @@ import Login from '../Home/Login';
  class Menu extends Component {
   render() {
     return (
-  <div className="container-fluid">
+  <div className="container">
          <div id="tickerwrap">
     <marquee id="ticker">
         Welcome to Veggie Boy Pizza. We make the best pizza 

@@ -33,7 +33,7 @@ componentDidMount(){
 loggedIn = async ()  => {
   const res = await Axios.post("/api/loggedIn");
    if(res.data === 0) {
-    this.props.history.push("/login");
+    this.props.history.push("/home");
   } else{
       const {username,
          email,
@@ -56,7 +56,7 @@ loggedIn = async ()  => {
 
 logout = async () => {
     await Axios.post("/api/logout");
-    this.props.history.push("/login");
+    this.props.history.push(`/register`);
 }
 
 onSubmit = e => {
@@ -167,8 +167,8 @@ updateUser = async newUser => {
           
         /> 
 
-           <Link to={`/user/${_id}/website`}
-           className="btn btn-primary btn-block">Websites</Link>
+           <Link to={`/`}
+           className="btn btn-primary btn-block">Home</Link>
           <button 
           type= "button"
            className="btn btn-dark btn-block"

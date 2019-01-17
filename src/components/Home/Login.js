@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
-import {axios} from "axios";
+import axios from "axios";
+
 
 export default class Login extends Component {
     constructor(props) {
@@ -40,20 +41,20 @@ export default class Login extends Component {
         }
         this.login(username, password)
     };
-  login = async (username, password) => {
-   const user = {username, password
-    }; 
-    try {
-        const res= await axios.post("/api/login", user);
-        this.props.history.push(`/user/${res.data._id}`);
-    }catch {
-        this.setState({
-        error: {
-            match: "Username and Password are not matched"
+    login = async (username, password) => {
+        const user = {username, password}; 
+        try {
+            const res = await axios.post("/api/login", user);
+            this.props.history.push(`/profile`);
+        } catch(err) {
+            console.log(err);
+            this.setState({
+                error: {
+                    match: "Username and Password are not matched"
+                }
+            })
         }
-      })
-    }
-};
+    };
 
   render() {
       const { username, password, errors } = this.state;
