@@ -47,10 +47,6 @@
   text-align: center;
   width: 20%;
 }
-.
-
-
-
 .circle {
   width: 250px;
   height: 250px;
@@ -118,8 +114,15 @@
   color: #fff;
 }
 H1{
-    text-align:center;
-    text-decoration:underline;
+   text-align:center;
+   color: white;
+}
+H2 {
+   color: blue;
+}
+H3 {
+  color: white;
+  text-align: center;
 }
 button{
     float:right
@@ -148,4 +151,14 @@ body {
 
 .border {
   border: 6px solid brown;
+}
+.list-group {
+  font-size: 25px;
+  width: 40%;
+  float: right; 
+}
+P {
+  color: black;
+  font-size: 27px;  
+  border: 3px solid red;   
 }

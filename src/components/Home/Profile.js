@@ -15,20 +15,20 @@ export default class Profile extends Component {
                     <div className="alert alert-danger">
                         This username   is taken, please try another one.
                     </div>
-                    <div class="alert alert-success">
+                    <div className="alert alert-success">
                         Update Successfully
                     </div>
                
                     <div className="form-group">
                         <label><b>Username</b></label>
-                        <input required class="form-control"        name="username"
+                        <input required className="form-control" name="username"
                         placeholder="Enter Username..."  /> 
                     </div>
-                    <div class="alert alert-warning">Username can't be empty</div>
+                    <div className="alert alert-warning">Username can't be empty</div>
                
                     <div className="form-group">
                         <label><b>Email</b></label>
-                        <input class="form-control" name="email" placeholder="Enter Email..." />
+                        <input className="form-control" name="email" placeholder="Enter Email..." />
                     </div>
                
                     <div className="form-group">
@@ -38,7 +38,7 @@ export default class Profile extends Component {
                
                     <div className="form-group">
                         <label><b>Last Name</b></label>
-                        <input class="form-control" name="lastName"  placeholder="Enter Last Name..." />
+                        <input className="form-control" name="lastName"  placeholder="Enter Last Name..." />
                     </div>
                
                     < a className="btn btn-primary btn-block">Websites</a>

@@ -6,35 +6,35 @@ class About extends Component {
     return (
   <div>
       <div className="background1">                         
-      <h4><b>Veggie Boy Pizza</b></h4>
-      <h4><b>The Best Pizza in Town</b></h4> 
-      <img src={require ("../../images/pizza-2776236_340.jpg")} alt="pizza pizza" width="400" height="150"/>
-        <hr/>      
-        <ul className="list-group">
-            <li className="list-group">
-             <Link to="/menu">Place Your Online Order Here</Link>                             
-            </li> 
-             <br></br>                            
-           <div className="form-group">
+          <h1><b>Veggie Boy Pizza</b></h1>
+          <h3><b>The Best Pizza In Town</b></h3> 
+           <img src={require ("../../images/pizza-2776236_340.jpg")} alt="pizza pizza" width="400" height="150"/>
+            <hr/> 
+            <div className="form-group">
               <br></br>
-              <h5><b>Give Us Some Feedback About Our Service</b></h5>
+              <h2><b>Veggie Boy Pizza    est. in 1963</b></h2>
                <br></br>
-               <textarea id="discription" row="5" type= "text" className="form-control"
-                  placeholder="Put Information Here"></textarea>                 
+              <p>
+                 One day John Miller was talking to his brother, about how they could eat healthier, and still consume the things they liked to eat. 
+                  They both loved pizza and a lot of research about eating healthy, they read articles into making vegetarian meals. Couple weeks later Veggie Boy Pizza was born, and we been making fantastic vegetarian meals ever since.  
+              </p>              
             </div>
-        </ul>                          
-         <div className="form-group">
-            <ul className="list-group">                    
-              <li className="list-group-item">
-                <Link to="/">Home</Link>                     
-              </li>             
-              <li className="list-group-item">
-                <Link to="/">Contact Us</Link>                    
-              </li>
-            </ul>
-          </div>
-    </div> 
-    </div> 
+            <div>
+              <ul className="list-group">
+                <li className="list-group">
+                 <Link to="/menu">Place Your Online Order Here</Link>                             
+                </li> 
+                <br></br>                          
+                <li className="list-group">
+                 <Link to="/">Home</Link>                     
+               </li>             
+               <li className="list-group">
+                 <Link to="/">Contact Us</Link>                    
+               </li>
+              </ul>       
+        </div>          
+      </div> 
+  </div> 
     )
     }
   }
