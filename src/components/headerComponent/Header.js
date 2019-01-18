@@ -12,7 +12,7 @@ class Header extends Component {
           <span className="navbar-toggler-icon" onClick={this.collapse}></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+         <div class="navbar-nav">
             <Link to="/" class="nav-item nav-link">Home</Link>
             <Link to="/menu" class="nav-item nav-link">Menu</Link>
             <Link to="/order" class="nav-item nav-link">Order</Link>
