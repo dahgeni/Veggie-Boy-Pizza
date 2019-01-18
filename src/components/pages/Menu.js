@@ -3,11 +3,19 @@ import Home from '../Home/Home';
 import Register from '../Home/Register';
 import About from '../pages/About';
 import Login from '../Home/Login';
+import axios from 'axios';
 
 
 
  class Menu extends Component {
-  render() {
+    componentDidMount = async () => {
+        let res = await axios.get('/api/pizza')
+        console.log(res.data);
+        
+    }
+
+
+    render() {
     return (
   <div className="container-fluid">
          <div id="tickerwrap">
