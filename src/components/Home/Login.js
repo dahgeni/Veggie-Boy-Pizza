@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
 import axios from "axios";
-import InputGroup from "../layout/InputGroup";
+import InputGroup from "../Layout/InputGroup";
 
 export default class Login extends Component {
 

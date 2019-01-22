@@ -6,7 +6,7 @@ import About from './components/pages/About';
 import Login from './components/Home/Login';
 import Order from './components/Home/Order';
 import Header from './components/headerComponent/Header';
-import Footer from './components/layout/Footer';
+import Footer from './components/Layout/Footer';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
