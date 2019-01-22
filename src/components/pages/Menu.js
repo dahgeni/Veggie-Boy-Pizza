@@ -20,7 +20,7 @@ import {Link} from "react-router-dom"
 
 <h1>The Menu</h1>
 <h4>Pepper Pizza</h4>
-<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
+<Link to ="../../components/Home/ThankYou" className="float-right">Order Now</Link>
 < img src={require( "../../images/pepper.jpg")} alt= "pepper pizza" width="200" height="150"/>
 <hr/>
 <div>
@@ -34,7 +34,7 @@ import {Link} from "react-router-dom"
 <br/>
 <h4>Cheese Pizza</h4>
 
-<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
+<Link to ="../../components/Home/ThankYou" className="float-right">Order Now</Link>
 < img src= {require ("../../images/cheesepizza.jpg")} alt= "cheese pizza" width="200" height="150"/>
  
 <hr/>
@@ -48,7 +48,7 @@ import {Link} from "react-router-dom"
 
 <br/>
 <h4>Onion Pizza</h4>
-<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
+<Link to ="../../components/Home/ThankYou" className="float-right">Order Now</Link>
 < img src= {require( "../../images/onion.jpg")} alt= "onion pizza" width="200" height="150"/>
 <hr/>
 <div>
@@ -60,7 +60,7 @@ import {Link} from "react-router-dom"
 
 <br/>
 <h4>Mushroom Pizza</h4>
-<Link to ="../../components/Home/Order" className="float-right">Order Now</Link>
+<Link to ="../../components/Home/ThankYou" className="float-right">Order Now</Link>
 <img src={require("../../images/mushroom.jpg")} alt="mushroom pizza" width="200" height="150"/>
 <hr/>
 <div>
