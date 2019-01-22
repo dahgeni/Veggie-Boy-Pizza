@@ -18,17 +18,17 @@ class Menu extends Component {
                     </div>
                     <h1>The Menu</h1>
                 </div>
-                <div >
+                <div className="container">
                     <h4>Pepper Pizza</h4>
                     < img src={require("../../images/pepper.jpg")} alt="pepper pizza" width="200" height="150" />
                     <hr />
                     <div>
                         <p>
-                        Contrary to popular belief, pizza can be a healthy dish.
-                         Adding vegetables like bell peppers, which are the best source of vitamin C,
-                         boosts your veggie intake. Additionally, if you choose reduced-fat or fat-free 
-                         cheese you cut back on fat and still get a boost of calcium.
-                            The pepper topped pizza is mighty tasty. You can have it for $15.99
+                            Contrary to popular belief, pizza can be a healthy dish.
+                             Adding vegetables like bell peppers, which are the best source of vitamin C,
+                             boosts your veggie intake. Additionally, if you choose reduced-fat or fat-free
+                             cheese you cut back on fat and still get a boost of calcium.
+                                The pepper topped pizza is mighty tasty. You can have it for $15.99
                     </p>
                         <hr />
                         <button className="onClick"> Order Now</button>
@@ -41,9 +41,9 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            Easy homemade dough, stretched into a perfect crust and topped off
-                             with not one or even two but three varieties of cheese. More cheese is always a good thing. 
-                                Our three cheese topped pizza is amazing. Enjoy it for $15.99
+                                Easy homemade dough, stretched into a perfect crust and topped off
+                                 with not one or even two but three varieties of cheese. More cheese is always a good thing.
+                                    Our three cheese topped pizza is amazing. Enjoy it for $15.99
                     </p>
                             <hr />
                         </div>
@@ -55,9 +55,9 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            Be bold and add extra layers of savory flavor with our onion Flavored Crust® 
-                            to your favorite pizza
-                                The one and only onion pizza is very delicious. Have one  for $15.99
+                                Be bold and add extra layers of savory flavor with our onion Flavored Crust®
+                                to your favorite pizza
+                                    The one and only onion pizza is very delicious. Have one  for $15.99
                         </p>
                             <hr />
                         </div>
@@ -68,9 +68,9 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            Doubling the mushroom with a cooked duxelles and 
-                            sliced mushrooms means more mushroom flavor in every bite.
-                                Our mushroom topped pizza is all the rage. Enjoy it for $15.99
+                                Doubling the mushroom with a cooked duxelles and
+                                sliced mushrooms means more mushroom flavor in every bite.
+                                    Our mushroom topped pizza is all the rage. Enjoy it for $15.99
                         </p>
                             <hr />
                         </div>
@@ -81,10 +81,10 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            Fresh out of the oven, this pizza takes you away, always consistent, 
-                            always the perfect pie!!! You can truly taste the difference in this pie,
-                             from the crust to the sauce, 
-                                The one and only barbecue pizza is very delicious. Have one  for $15.99
+                                Fresh out of the oven, this pizza takes you away, always consistent,
+                                always the perfect pie!!! You can truly taste the difference in this pie,
+                                 from the crust to the sauce,
+                                    The one and only barbecue pizza is very delicious. Have one  for $15.99
                         </p>
                             <hr />
                         </div>
@@ -109,9 +109,9 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            With Valentine's Day is around the corner, 
-                            These Heart Shaped Pizzas with Heart Shaped Pepperoni are perfect for Valentine’s Day!
-                                The one and only heart shaped pizza is very delicious. Have one  for $15.99
+                                With Valentine's Day is around the corner,
+                                These Heart Shaped Pizzas with Heart Shaped Pepperoni are perfect for Valentine’s Day!
+                                    The one and only heart shaped pizza is very delicious. Have one  for $15.99
                         </p>
                             <hr />
                         </div>
@@ -122,11 +122,11 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            My favorite thin crust pizza dough ever is thin but still perfectly foldable with 
-                            a tasty and slightly crispy crust! An easy weeknight pizza with minimal ingredients 
-                            and no waiting for the dough to rise!  This favorite recipe of mine makes not one,
-                             but two pizza crusts so you can have one now and another easy weeknight meal later.
-                                The one and only flat bread pizza is very delicious. Have one  for $15.99
+                                My favorite thin crust pizza dough ever is thin but still perfectly foldable with
+                                a tasty and slightly crispy crust! An easy weeknight pizza with minimal ingredients
+                                and no waiting for the dough to rise!  This favorite recipe of mine makes not one,
+                                 but two pizza crusts so you can have one now and another easy weeknight meal later.
+                                    The one and only flat bread pizza is very delicious. Have one  for $15.99
                        </p>
                             <hr />
                         </div>
@@ -137,10 +137,10 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                            The healthier, whole-wheat base in this pizza will keep your belly feeling fuller 
-                            longer than typical pie. And in lieu of traditional marinara sauce,
-                             pesto is full of heart-healthy fats from olive oil and pine nuts.
-                                The one and only pesto pizza is very delicious. Have one  for $15.99
+                                The healthier, whole-wheat base in this pizza will keep your belly feeling fuller
+                                longer than typical pie. And in lieu of traditional marinara sauce,
+                                 pesto is full of heart-healthy fats from olive oil and pine nuts.
+                                    The one and only pesto pizza is very delicious. Have one  for $15.99
                        </p>
                             <hr />
                         </div>
@@ -153,10 +153,10 @@ class Menu extends Component {
                     <hr />
                     <div>
                         <p>
-                        Fresh out of the oven, this pizza takes you away, always consistent,
-                         always the perfect pie!!! You can truly taste the difference in this pie, 
-                         from the crust to the sauce, 
-                            The one and only simply veggie pizza is very delicious. Have one  for $15.99
+                            Fresh out of the oven, this pizza takes you away, always consistent,
+                             always the perfect pie!!! You can truly taste the difference in this pie,
+                             from the crust to the sauce,
+                                The one and only simply veggie pizza is very delicious. Have one  for $15.99
                    </p>
                         <hr />
                     </div>
@@ -167,11 +167,11 @@ class Menu extends Component {
                     <hr />
                     <div>
                         <p>
-                        Easy White Spinach Pizza. This Spinach Pizza has a tender crust ,
-                         topped with garlic infused olive oil, a mix of creamy ricotta, spinach, and herbs.
-                          And then finished with sharp Parmesan cheese and mozzarella. 
-                          It is a bite of Florentine meets America.
-                            The one and only spinach pizza is very delicious. Have one for $15.99
+                            Easy White Spinach Pizza. This Spinach Pizza has a tender crust ,
+                             topped with garlic infused olive oil, a mix of creamy ricotta, spinach, and herbs.
+                              And then finished with sharp Parmesan cheese and mozzarella.
+                              It is a bite of Florentine meets America.
+                                The one and only spinach pizza is very delicious. Have one for $15.99
                    </p>
                         <hr />
                     </div>
@@ -182,9 +182,9 @@ class Menu extends Component {
                     <hr />
                     <div>
                         <p>
-                        Zucchini Pizza fully loaded with sausage, mushrooms, peppers and olives, 
-                        it’s a lower-carb, lower-calorie way to enjoy pizza and sneak some extra veggies into your diet.
-                            The one and only zucchini Goat Cheese pizza is very delicious. Have one  for $15.99
+                            Zucchini Pizza fully loaded with sausage, mushrooms, peppers and olives,
+                            it’s a lower-carb, lower-calorie way to enjoy pizza and sneak some extra veggies into your diet.
+                                The one and only zucchini Goat Cheese pizza is very delicious. Have one  for $15.99
                     </p>
                         <hr />
                     </div>
