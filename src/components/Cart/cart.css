@@ -13,10 +13,10 @@
     color: white;
  }
  .my-row {
-  border: 4 px burlywood;
+  border: 4px solid;
  }
  .my-col {
-    border: 4 px burlywood;
+    border: 4px solid;
  }
  #center {
     display: block;
@@ -31,3 +31,14 @@
   .p-card {
       color: burlywood;
   }
+  .in-front {
+    z-index: 20;
+  }
+
+  .p-row {
+    border: 4px solid;   
+   height: 200px;
+}
+
+
+
