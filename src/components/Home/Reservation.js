@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios"
 
 class Reservation extends Component {
   constructor(props) {
@@ -49,6 +50,16 @@ class Reservation extends Component {
       return;
     }
     window.$('#pizzaModal').modal('show')
+    
+    const reservation = {
+      name: this.state.name,
+      email: this.state.email,
+      people: this.state.people,
+      date: this.state.date,
+      time: this.state.time
+    }
+
+    this.addReservation(reservation);
 
     this.setState({
       name: "",
@@ -58,6 +69,10 @@ class Reservation extends Component {
       time: "",
       error: ""
     })
+  }
+
+  addReservation = (reservation) => {
+    axios.post("/api/reservation", reservation);
   }
 
   handleChange = e => {

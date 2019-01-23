@@ -4,7 +4,6 @@ import Menu from './components/pages/Menu';
 import Register from './components/Home/Register';
 import About from './components/pages/About';
 import Login from './components/Home/Login';
-import Cart from './components/Cart/Cart';
 import Reservation from './components/Home/Reservation';
 import PageEdit from './components/pages/ProfileEdit';
 import Header from './components/headerComponent/Header';
@@ -31,7 +30,7 @@ class App extends Component {
           />
           <Route exact path="/ProfileEdit" component={PageEdit} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/cart" component={Cart} />
+          
         </Switch>
         <Footer />
       </div>

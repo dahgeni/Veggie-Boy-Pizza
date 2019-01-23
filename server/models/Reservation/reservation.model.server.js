@@ -6,7 +6,7 @@ const ReservationModel = mongoose.model('ReservationModel', ReservationSchema);
 ReservationModel.createReservation = createReservation;
 ReservationModel.updateReservation = updateReservation;
 ReservationModel.findResevation = findReservation;
-ReservationModel.deleteReservation = deleteResevation;
+ReservationModel.deleteReservation = deleteReservation;
 
 function createReservation(reservation) { 
     return ReservationModel.create(reservation)
@@ -26,4 +26,4 @@ function deleteReservation(pid) {
 
 
 
-module.exports= Reservation; 
+module.exports= ReservationModel; 

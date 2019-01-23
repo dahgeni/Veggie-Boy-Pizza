@@ -1,11 +1,14 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
-var ReservationSchema = mongoose.Schema({
-
-    title: {type: String, default: ''},
-    description: {type: String, Boulean},
-}, 
+var ReservationSchema = mongoose.Schema(
+  {
+    name: String,
+    email: String,
+    people: Number,
+    date: String,
+    time: String
+  },
+  { collection: "reservation" }
 );
-
 
 module.exports = ReservationSchema;
