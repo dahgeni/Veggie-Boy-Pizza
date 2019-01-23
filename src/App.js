@@ -7,13 +7,15 @@ import Login from './components/Home/Login';
 import Order from './components/Home/Order';
 import Header from './components/headerComponent/Header';
 import Footer from './components/Layout/Footer';
+import Cart from './components/Cart/Cart';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 class App extends Component {
   render() {
-    return (
+    return ( 
+     
     <Router>
       <div>
         <Header />
@@ -24,6 +26,7 @@ class App extends Component {
           <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/cart" component={Cart} />
         </Switch>
         <Footer />
       </div>
