@@ -48,6 +48,8 @@ import './cart.css';
       
       <button type="button"className="btn btn-warning big-font"> Delete</button>
       <button type="button"className="btn btn-dark big-font float-left"> Buy Now</button>
+   
+      <button type="button" className="btn btn-light  align-right" >Logout</button>
 
       </div>
       </div>
