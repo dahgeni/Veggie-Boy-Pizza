@@ -1,0 +1,8 @@
+ <a className="btn btn-outline-dark" routerLink="/user-list">Log Out</a>
+      <nav className="navbar navbar-dark bg-primary fixed-bottom">
+        <div className="full-width">
+          <a className="color-white float-right">
+            <i className="fas fa-user" />
+          </a>
+        </div>
+      </nav>
