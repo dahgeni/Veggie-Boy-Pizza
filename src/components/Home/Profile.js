@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
 import {Link}  from "react-router-dom";
-import Footer from "../layout/Footer";
-import InputGroup from "../layout/InputGroup";
+import Footer from "../Layout/Footer";
+import InputGroup from "../Layout/InputGroup";
 
 export default class Profile extends Component {
 
@@ -33,11 +33,14 @@ componentDidMount(){
 loggedIn = async ()  => {
   const res = await Axios.post("/api/loggedIn");
    if(res.data === 0) {
-    this.props.history.push("/login");
+    this.props.history.push("/home");
   } else{
-      const {username, email, firstName,
-      lastName, password, _id} =
-      res.data;
+      const {username,
+         email,
+         firstName,
+         lastName, 
+         password, _id} =
+         res.data;
 
       this.setState({
        username,
@@ -53,7 +56,7 @@ loggedIn = async ()  => {
 
 logout = async () => {
     await Axios.post("/api/logout");
-    this.props.history.push("/login");
+    this.props.history.push(`/register`);
 }
 
 onSubmit = e => {
@@ -70,7 +73,8 @@ onSubmit = e => {
      _id,
      username, 
      password,
-     email,firstName,
+     email,
+     firstName,
      lastName
    };
    console.log(newUser)
@@ -102,16 +106,17 @@ updateUser = async newUser => {
           className="navbar-brand">
           <b>Profile</b>
           </Link>         
-           <button
+           {/* <button
             className= "btn color-white bg-transparent"
             type="submit"
              form="myForm">
              <i className="fas fa-check"></i>
-             </button>
-      </nav>
-      <br/>                   
-    
-        <div className="container">
+             </button> */}
+      {/* </nav> */} 
+       <br/>                   
+       <br />
+       <br />
+        <div style={{paddingTop:'5px'}} className="container">
           <form id="myForm" onSubmit={this.onSubmit}>
               {errors.taken && (
                 <div className= "alert alert-danger">
@@ -141,7 +146,7 @@ updateUser = async newUser => {
           )}
          
         <InputGroup 
-            name="Email"
+            name="email"
             placeholder="Email"
             value= {email} 
             onChange={this.onChange}
@@ -163,24 +168,30 @@ updateUser = async newUser => {
           
         /> 
 
-           <Link to={`/user/${_id}/website`}
-           className="btn btn-primary btn-block">Websites</Link>
+           <Link to={`/`}
+           className="btn btn-primary btn-block">Home</Link>
           <button 
           type= "button"
-           className="btn btn-danger btn-block"
+           className="btn btn-dark btn-block"
            onClick = {this.logout}
           >
           Logout
           </button>
            <br />
-            <Link to="/user-list"
-             className="btn btn-outline-dark"
-            >User List
-            </Link>
+           <br />
+           <br />
+           <button
+            className= "btn color-white bg-dark"
+            type="submit"
+             form="myForm">
+             <i className="fas fa-check"></i> Update
+             </button>
           </form>
         </div> 
+          </nav>
         <Footer />   
       </div>
+       
     );
   }
 }

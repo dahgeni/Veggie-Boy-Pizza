@@ -19,7 +19,9 @@ import React, { Component } from 'react'
             </li>
               <li className= "list-item">
            
-               <img className="nav-link" id="credit-image" src={require("../../images/creditcardlogos.png")}alt="credit"/>
+               <img className="nav-link"
+                id="credit-image" 
+                src={require("../../images/creditcardlogos.png")}alt="credit"/>
             </li>
         </ul>
        </div>

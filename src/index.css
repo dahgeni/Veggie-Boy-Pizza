@@ -89,7 +89,7 @@
 
 #credit-image {
   position: absolute;
-  right: 150px;
+  right: 5%;
   width: 200px
   
 }
@@ -111,7 +111,6 @@
 
 .title{
     text-align:center;
-    text-decoration:underline;
 }
 button{
     float:right
@@ -121,6 +120,9 @@ span{
   
 }
 body {
+  font-family: 'Pacifico', cursive;
+  margin-left:7%;
+  margin-right:2%;
   background: brown;
 }
 
@@ -133,9 +135,22 @@ body {
   opacity: 0.6;
   margin:auto;
 }
+.container1 {
+  height: 10em;
+  position: relative ;
 
+  margin: 100;
+  background: orangered;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+.container3 {
+  text-align: center;
+}
 #move {
-  float: right;
+  float: right
 }
 
 .border {
@@ -158,3 +173,12 @@ body {
   }
 }
 
+.app {
+  padding-bottom: 75px
+}
+.color-white {
+  color: white;
+}
+.bg-transparent {
+  background: transparent;
+}

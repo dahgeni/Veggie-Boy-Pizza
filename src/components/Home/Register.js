@@ -72,7 +72,7 @@ export default class Register extends Component {
        } else {
            const user = {username, password};
            await axios.post("/api/register", user);
-           this.props.history.push("/profile");
+           this.props.history.push(`/profile`);
        }
     }
 
@@ -81,10 +81,8 @@ export default class Register extends Component {
       this.state
 
     return (
-
     <div className="container font-white">
         <h1>New Customer</h1>
-        <br />
         <form onSubmit= {this.onSubmit}>
             {errors.taken && (
             <div  className= "alert alert-danger">
@@ -114,6 +112,7 @@ export default class Register extends Component {
 
         <InputGroup
             name="password"
+            type="password"
             placeholder="Password"
             value={password}
             onChange={this.onChange}
@@ -127,8 +126,9 @@ export default class Register extends Component {
         )}
 
         <InputGroup
-            name="Verify Password"
+            name="verifyPassword"
             placeholder="Verify Password"
+            type="password"
             value={verifyPassword}
             onChange={this.onChange}
             
@@ -142,15 +142,14 @@ export default class Register extends Component {
 
         <button type = "submit" className=
             "btn btn-primary btn-block">
-            Register  
-        </button>      
-       <button className="btn btn-danger btn-block">
-            <Link style={{color: "white"}} to= "/login">
-            Cancel</Link></button>
-            {/* className=
-                "btn btn-danger btn-block">
-                Cancel */}
-            
+            Register       
+       </button>
+       <br />
+       <br />
+            <Link to= "/login" className=
+                "btn btn-dark btn-block">
+                Cancel
+            </Link>
         </form> 
     </div>
     )

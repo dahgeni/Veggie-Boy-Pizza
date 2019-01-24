@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Home from '../Home/Home';
-import Register from '../Home/Register';
-import About from '../pages/About';
-import Login from '../Home/Login';
+import "../../index.css";
 import axios from 'axios';
 
 

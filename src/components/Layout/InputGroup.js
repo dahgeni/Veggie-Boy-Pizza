@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from "prop-types";
 
 
-function inputGroup({
+function InputGroup({
     name,
     label,
     type,
@@ -26,10 +26,10 @@ function inputGroup({
     )
 }
 
-inputGroup.defaultProps = {
+InputGroup.defaultProps = {
     type: "text"
 }
-inputGroup.propTypes = {
+InputGroup.propTypes = {
     label: PropTypes.string,
     name: PropTypes.string.isRequired,
     type: PropTypes.string,
@@ -40,4 +40,4 @@ inputGroup.propTypes = {
     rows: PropTypes.string
 };
 
-export default inputGroup;
+export default InputGroup;
