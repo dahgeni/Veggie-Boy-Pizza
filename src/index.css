@@ -132,12 +132,12 @@ body {
   
 }
 .container1 {
-  height: 15em;
-  width: 15em;
+  height: 5em;
+  width: 5em;
   background: brown;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  left: 5%;
   transform: translate(-50%, -50%) }
 .container3 {
   text-align: center;
