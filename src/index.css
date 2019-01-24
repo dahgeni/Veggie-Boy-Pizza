@@ -3,7 +3,8 @@
 
 .background {
   background-image: url("./images/brickoven.jpg");
-  min-height: 100vh;
+  height: 400;
+  width: 1100;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,6 +38,9 @@
    color: white;
 }
 
+.extra-line {
+  line-height: 40px
+}
 
 
 .circle {
@@ -120,6 +124,14 @@ body {
   margin-left:7%;
   margin-right:2%;
   background: brown;
+}
+
+.about-background{
+  background: url("https://img.freepik.com/free-photo/slice-delicious-pizza-with-ingredients-textured-wooden-background_23-2147926094.jpg?size=626&ext=jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .rectangle {

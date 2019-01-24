@@ -6,3 +6,4 @@
           </a>
         </div>
       </nav>
+       <Link to="../../components/Home/ThankYou" className="float-right">Order Now</Link>

@@ -3,7 +3,6 @@ import "../../index.css"
 import { Link } from 'react-router-dom';
 import Home from '../Home/Home';
 import Register from '../Home/Register';
-import About from './About';
 import Login from '../Home/Login';
 
 const ThankYou = () => {
@@ -13,8 +12,7 @@ const ThankYou = () => {
         height="400" width="1100"></img>
       <br/>
       <br/>
-      < a className="btn btn-secondary btn-block">Thank You</a>
-      <button className="btn btn-success btn-block">Logout</button>
+      <button className="btn btn-secondary btn-block">Logout</button>
       <br />
     </div>
   )
