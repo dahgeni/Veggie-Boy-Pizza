@@ -28,6 +28,14 @@
    padding-top: 100px;
 
 }
+
+.font-white-menu{
+	color: white;
+	background-color:brown;
+   width: 100%;
+   padding-top: 100px;
+}
+
 .customColor {
   text-align: center;
   color: #a52a2a;
@@ -136,4 +144,10 @@ body {
 
 .border {
   border: 6px solid brown;
+}
+
+.body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  
 }
