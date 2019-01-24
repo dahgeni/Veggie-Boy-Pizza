@@ -3,7 +3,13 @@
 
 .background {
   background-image: url("./images/brickoven.jpg");
-  min-height: 100vh;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+ #reservationbg {
+  background-image: url("./images/restaurantseating.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,6 +61,7 @@
   -webkit-border-radius: 150px; 
   border-radius: 150px;
   border: 5px solid green;
+  margin:auto;
 }
 
 .in-front {
@@ -72,24 +79,8 @@
   white-space: wrap;
 }
 
-.center {
-  display: block;
-  margin: 0;
-  margin-right: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.order {
-  display: block;
-  margin: 0;
-  margin-right: 0;
-  position: absolute;
-  top: 40%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+.center h1{
+  padding: 0;
 }
 
 .footer {
@@ -113,7 +104,12 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
-H1{
+
+.no-padding {
+  padding: 0;
+}
+
+.title{
     text-align:center;
     text-decoration:underline;
 }
@@ -135,7 +131,7 @@ body {
   border: 3px solid green;
    padding: 70px;
   opacity: 0.6;
-  
+  margin:auto;
 }
 
 #move {
@@ -151,3 +147,14 @@ body {
   padding-bottom: 70px;
   
 }
+.form-group2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 960px) {
+  .background{
+    min-height: 130vh
+  }
+}
+

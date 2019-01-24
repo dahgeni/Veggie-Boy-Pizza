@@ -1,4 +1,4 @@
-var connectionString = 'mongodb://127.0.0.1:27017/Assignment-Web-Maker-1'; // for local
+var connectionString = 'mongodb://127.0.0.1:27017/veggie-boy-pizza'; // for local
 
 
 if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
@@ -9,15 +9,21 @@ if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
 
   connectionString = 'mongodb://' + username + ':' + password;
 
-  connectionString += "@ds039095.mlab.com:39095/heroku_wtsbl182";// use yours
+  connectionString += '@ds0000.mlab.com:29004/dasdasds'; // use yours
+
 }
+//import mongoose library
 
 var mongoose = require("mongoose");
-// import mongoose library
-var db = mongoose.connect(connectionString,
-    {useNewUrlParser: true}
+// connect server with database
+var db = mongoose.connect(connectionString, { useNewUrlParser: true } 
     );
-// connet server with database
+  
+
 
 module.exports = db;
-// export this file
+
+
+
+
+
