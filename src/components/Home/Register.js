@@ -104,6 +104,7 @@ export default class Register extends Component {
             onChange={this.onChange}
           
         /> 
+        <div/>
             {errors.username && (
         <div className= "alert alert-warning">
             {errors.username}
@@ -118,7 +119,7 @@ export default class Register extends Component {
             onChange={this.onChange}
             
         /> 
-
+        <div/>
             {errors.password && (
         <div className= "alert alert-warning">
                {errors.password}
@@ -133,7 +134,7 @@ export default class Register extends Component {
             onChange={this.onChange}
             
         />
-
+        <div/>
             {errors.verifyPassword && (
         <div className= "alert alert-warning">
             {errors.verifyPassword}
