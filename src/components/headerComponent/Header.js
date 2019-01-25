@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //components
 import "../../index.css"
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 class Header extends Component {
 
   render() {
@@ -13,7 +13,8 @@ class Header extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link to="/" className="nav-item nav-link">Home</Link>
+            <Link to="/" className="nav-item nav-link">Home
+        </Link>
             <Link to="/menu" className="nav-item nav-link">Menu</Link>
             <Link to="/reservation" className="nav-item nav-link">Reservation</Link>
             <Link to="/about" className="nav-item nav-link">About</Link>
@@ -25,7 +26,7 @@ class Header extends Component {
                          <h4>1-800-My- Pizza</h4>
                </div>               
              </div>
-          </div>
+          </div>      
         </nav>
     );
   }

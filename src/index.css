@@ -10,6 +10,8 @@
 }
  #reservationbg {
   background-image: url("./images/restaurantseating.jpg");
+  height: 400;
+  width: 1100;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -51,6 +53,9 @@
    color: white;
 }
 
+.extra-line {
+  line-height: 40px
+}
 
 
 .circle {
@@ -126,6 +131,14 @@ body {
   background: brown;
 }
 
+.about-background{
+  background: url("https://img.freepik.com/free-photo/slice-delicious-pizza-with-ingredients-textured-wooden-background_23-2147926094.jpg?size=626&ext=jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .rectangle {
   height: 500px;
   width: 350px;
@@ -136,15 +149,12 @@ body {
   margin:auto;
 }
 .container1 {
-  height: 10em;
-  position: relative ;
-
-  margin: 100;
-  background: orangered;
+  height: 5em;
+  width: 5em;
+  background: brown;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
+  top: 5%;
+  left: 5%;
   transform: translate(-50%, -50%) }
 .container3 {
   text-align: center;
@@ -176,6 +186,10 @@ body {
 .app {
   padding-bottom: 75px
 }
+.font-yellow{
+color: yellow
+}
+ 
 .color-white {
   color: white;
 }

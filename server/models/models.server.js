@@ -27,8 +27,8 @@ module.exports = db;
 
 
 
-  connectionString += "@ds039095.mlab.com:39095/heroku_wtsbl182";// use yours
-}
+  connectionString += '@ds039095.mlab.com:39095/heroku_wtsbl182';// use yours
+
 
 var mongoose = require("mongoose");
 // import mongoose library
