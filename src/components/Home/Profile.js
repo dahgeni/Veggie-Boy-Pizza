@@ -101,18 +101,18 @@ updateUser = async newUser => {
         
     return (
     <div>
-        <nav className="navbar navbar-dark bg-primary fixed-top">
+        {/* <nav className="navbar navbar-dark bg-primary fixed-top">
           <Link to="/profile"
           className="navbar-brand">
           <b>Profile</b>
           </Link>         
-           {/* <button
-            className= "btn color-white bg-transparent"
+           {/* <button */}
+            {/* className= "btn color-white bg-transparent"
             type="submit"
              form="myForm">
              <i className="fas fa-check"></i>
              </button> */}
-      {/* </nav> */} 
+      {/* </nav> */}  
        <br/>                   
        <br />
        <br />
@@ -170,13 +170,13 @@ updateUser = async newUser => {
 
            <Link to={`/`}
            className="btn btn-primary btn-block">Home</Link>
-          <button 
-          type= "button"
+          <Link to=
+          "login"
            className="btn btn-dark btn-block"
            onClick = {this.logout}
           >
           Logout
-          </button>
+          </Link>
            <br />
            <br />
            <br />
@@ -188,7 +188,7 @@ updateUser = async newUser => {
              </button>
           </form>
         </div> 
-          </nav>
+         
         <Footer />   
       </div>
        
