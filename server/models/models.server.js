@@ -18,15 +18,5 @@ var mongoose = require("mongoose");
 var db = mongoose.connect(connectionString, { useNewUrlParser: true } 
     );
   
-
-
 module.exports = db;
-
-
-
-
-
-  connectionString += '@ds039095.mlab.com:39095/heroku_wtsbl182';// use yours
-
-
-
+  // connectionString += '@ds039095.mlab.com:39095/heroku_wtsbl182';// use yours
