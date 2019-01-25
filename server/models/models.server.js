@@ -9,8 +9,7 @@ if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
 
   connectionString = 'mongodb://' + username + ':' + password;
 
-  connectionString += '@ds0000.mlab.com:29004/dasdasds'; // use yours
-
+  connectionString += '@ds213255.mlab.com:13255/heroku_pt1hctp1'; // use yours
 }
 //import mongoose library
 
