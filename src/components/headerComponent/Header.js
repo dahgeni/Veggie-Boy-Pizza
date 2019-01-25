@@ -22,8 +22,8 @@ class Header extends Component {
             <Link to="/register" className="nav-item nav-link">New Customer</Link>
                      <div className="white-font" id="brick">
                   
-           <h4 style={{paddingTop: '15px', paddingLeft: '15px'}}>Brick Oven Pizza</h4>
-                         <h4>1-800-My- Pizza</h4>
+           <h6 style={{paddingTop: '15px', paddingLeft: '15px'}}>Brick Oven Pizza</h6>
+                         <h6>1-800-My- Pizza</h6>
                </div>               
              </div>
           </div>      
