@@ -94,7 +94,7 @@
 
 #credit-image {
   position: absolute;
-  right: 150px;
+  right: 5%;
   width: 200px
   
 }
@@ -169,3 +169,9 @@ body {
 color: yellow
 }
  
+.color-white {
+  color: white;
+}
+.bg-transparent {
+  background: transparent;
+}

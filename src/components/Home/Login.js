@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
-import {axios} from "axios";
+import axios from "axios";
+
 
 export default class Login extends Component {
     constructor(props) {
@@ -40,20 +41,20 @@ export default class Login extends Component {
         }
         this.login(username, password)
     };
-  login = async (username, password) => {
-   const user = {username, password
-    }; 
-    try {
-        const res= await axios.post("/api/login", user);
-        this.props.history.push(`/user/${res.data._id}`);
-    }catch {
-        this.setState({
-        error: {
-            match: "Username and Password are not matched"
+    login = async (username, password) => {
+        const user = {username, password}; 
+        try {
+            const res = await axios.post("/api/login", user);
+            this.props.history.push(`/profile`);
+        } catch(err) {
+            console.log(err);
+            this.setState({
+                error: {
+                    match: "Username and Password are not matched"
+                }
+            })
         }
-      })
-    }
-};
+    };
 
   render() {
       const { username, password, errors } = this.state;
@@ -65,12 +66,18 @@ export default class Login extends Component {
             <form onSubmit={this.onSubmit}> 
                 {errors.match &&(
                 <div className="alert alert-danger">
-                    the username and password do not match our records; please try again
+                    The username and password do not match our records; please try again
                 </div>
                 )}
+                
                 <div className="form-group">
-                    <input className="form-control" name="username" type="text" placeholder="username" value={username} 
-                    onChange = {this.onchange} />
+                    <input className="form-control"
+                     name="username"
+                      type="text"
+                       placeholder="Username" 
+                       value={username} 
+                    onChange = {this.onChange} />
+
                 </div>
                 {errors.username && (
                 <div className="alert alert-warning">
@@ -78,8 +85,14 @@ export default class Login extends Component {
                     {errors.match}
                 </div> 
                 )}
+
                 <div className="form-group">
-                    <input className="form-control"  name="password"type="password" placeholder="password" value={password} 
+                    <input 
+                    className="form-control" 
+                     name="password"
+                     type="password" 
+                     placeholder="Password"
+                     value={password} 
                     onChange={this.onChange} />
                 </div>
                 {errors.password && ( 
@@ -88,7 +101,9 @@ export default class Login extends Component {
                 </div>
                 )}
                 <button type="submit" className="btn btn-primary btn-block">Login</button>
-                <Link to= "/register" className="btn btn-success btn-block">Register</Link>
+                <br />
+                <br />
+                <Link to= "/register" className="btn btn-dark btn-block">Register</Link>
             </form>
         </div>
         </div>

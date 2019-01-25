@@ -6,11 +6,8 @@ import About from './components/pages/About';
 import Login from './components/Home/Login';
 import Header from './components/headerComponent/Header';
 import Footer from './components/Layout/Footer';
+import Profile from './components/Home/Profile';
 import ThankYou from './components/pages/ThankYou';
-import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
-import { Link } from "react-router-dom"
-
-
 class App extends Component {
   render() {
     return (
@@ -20,7 +17,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/menu" component={Menu} />
-
+            <Route exact path="/profile" component={Profile} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/about" component={About} />
             <Route exact path="/login" component={Login} />
@@ -29,8 +26,6 @@ class App extends Component {
           <Footer />
         </div>
       </Router>
-
-
     )
   }
 }
