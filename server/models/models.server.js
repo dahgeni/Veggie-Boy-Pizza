@@ -29,12 +29,4 @@ module.exports = db;
   connectionString += '@ds039095.mlab.com:39095/heroku_wtsbl182';// use yours
 
 
-var mongoose = require("mongoose");
-// import mongoose library
-var db = mongoose.connect(connectionString,
-    {useNewUrlParser: true}
-    );
-// connet server with database
 
-module.exports = db;
-// export this file
