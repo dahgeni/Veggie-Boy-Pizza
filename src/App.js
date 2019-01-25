@@ -8,6 +8,7 @@ import Header from './components/headerComponent/Header';
 import Footer from './components/Layout/Footer';
 import Profile from './components/Home/Profile';
 import ThankYou from './components/pages/ThankYou';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 class App extends Component {
   render() {
     return (
