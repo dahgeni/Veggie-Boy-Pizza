@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 import "./cart.css";
 
@@ -36,10 +37,10 @@ class Cart extends Component {
             {" "}
             Delete
           </button>
-          <button type="button" className="btn btn-dark big-font float-left">
+          <Link to="thankyou" className="btn btn-dark big-font float-left">
             {" "}
             Buy Now
-          </button>
+          </Link>
           <br />
           <br />
           <br />
@@ -47,10 +48,10 @@ class Cart extends Component {
           <br />
           <br />
 
-          <button type="button" className="btn btn-light float-left">
+          <Link to="login" className="btn btn-light float-left">
             {" "}
             <h4>logout</h4>
-          </button>
+          </Link>
         </div>
       </div>
     );
