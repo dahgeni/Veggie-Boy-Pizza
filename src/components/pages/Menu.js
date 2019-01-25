@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../../index.css";
 import axios from 'axios';
-
+import {Link} from "react-router-dom"
 
 
 class Menu extends Component {
@@ -17,6 +17,7 @@ class Menu extends Component {
                     <h1>The Menu</h1>
                 </div>
                 <div className="container">
+                <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                     <h4>Pepper Pizza</h4>
                     < img src={require("../../images/pepper.jpg")} alt="pepper pizza" width="200" height="150" />
                     <hr />
@@ -29,11 +30,10 @@ class Menu extends Component {
                                 The pepper topped pizza is mighty tasty. You can have it for $15.99
                     </p>
                         <hr />
-                        <button className="onClick"> Order Now</button>
-
-                        <br />
+                       
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
+                        <br />                       
                         <h4>Cheese Pizza</h4>
-
                         < img src={require("../../images/cheesepizza.jpg")} alt="cheese pizza" width="200" height="150" />
 
                         <hr />
@@ -45,8 +45,8 @@ class Menu extends Component {
                     </p>
                             <hr />
                         </div>
-                        <button className="onClick"> Order Now</button>
-
+                        
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                         <br />
                         <h4>Onion Pizza</h4>
                         < img src={require("../../images/onion.jpg")} alt="onion pizza" width="200" height="150" />
@@ -58,8 +58,8 @@ class Menu extends Component {
                                     The one and only onion pizza is very delicious. Have one  for $15.99
                         </p>
                             <hr />
-                        </div>
-                        <button className="onClick"> Order Now</button>
+                        </div>                      
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                         <br />
                         <h4>Mushroom Pizza</h4>
                         <img src={require("../../images/mushroom.jpg")} alt="mushroom pizza" width="200" height="150" />
@@ -72,7 +72,7 @@ class Menu extends Component {
                         </p>
                             <hr />
                         </div>
-                        <button className="onClick"> Order Now</button>
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                         <br />
                         <h4>Barbecue Pizza</h4>
                         < img src={require("../../images/barbecued.jpeg")} alt="barbecue pizza" width="200" height="150" />
@@ -86,7 +86,7 @@ class Menu extends Component {
                         </p>
                             <hr />
                         </div>
-                        <button className="onClick"> Order Now</button>
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                         <br />
                         <h4>Olive Pizza</h4>
                         < img src={require("../../images/olive pizza.jpg")} alt="olive pizza" width="200" height="150" />
@@ -100,7 +100,9 @@ class Menu extends Component {
                         </p>
                             <hr />
                         </div>
-                        <button className="onClick"> Order Now</button>
+                       
+                    }
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>   
                         <br />
                         <h4>Heart Shaped Pizza</h4>
                         < img src={require("../../images/heart-shaped-pizza.jpg")} alt="heartshaped pizza" width="200" height="150" />
@@ -113,7 +115,7 @@ class Menu extends Component {
                         </p>
                             <hr />
                         </div>
-                        <button className="onClick"> Order Now</button>
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                         <br />
                         <h4>Flat Bread Delight Pizza</h4>
                         < img src={require("../../images/flatbreaddelight.jpg")} alt="flat bread pizza" width="200" height="150" />
@@ -128,7 +130,7 @@ class Menu extends Component {
                        </p>
                             <hr />
                         </div>
-                        <button className="onClick"> Order Now</button>
+                        <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                         <br />
                         <h4>Pesto Pizza</h4>
                         < img src={require("../../images/pesto.jpg")} alt="pesto pizza" width="200" height="150" />
@@ -141,9 +143,8 @@ class Menu extends Component {
                                     The one and only pesto pizza is very delicious. Have one  for $15.99
                        </p>
                             <hr />
-                        </div>
-                        <button className="onClick"> Order Now</button>
-
+                       </div>                                                  
+                    <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                     </div>
                     <br />
                     <h4>Simply Veggie Pizza</h4>
@@ -158,7 +159,7 @@ class Menu extends Component {
                    </p>
                         <hr />
                     </div>
-                    <button className="onClick"> Order Now</button>
+                    <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                     <br />
                     <h4>Spinach Pizza</h4>
                     < img src={require("../../images/spinach.jpg")} alt="spinach pizza" width="200" height="150" />
@@ -173,7 +174,7 @@ class Menu extends Component {
                    </p>
                         <hr />
                     </div>
-                    <button className="onClick"> Order Now</button>
+                    <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                     <br />
                     <h4>Zucchini Goat Cheese Pizza</h4>
                     < img src={require("../../images/zucchinigoatcheese.jpg")} alt="zucchini goat cheese pizza" width="200" height="150" />
