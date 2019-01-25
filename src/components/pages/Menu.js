@@ -187,7 +187,6 @@ class Menu extends Component {
                     </p>
                         <hr />
                     </div>
-                    <button className="onClick"> Order Now</button>
                 </div>
             </div>
         )

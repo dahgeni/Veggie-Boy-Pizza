@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/mushroom.be312d27.jpg"
   },
   {
-    "revision": "87bf5ac633bad75b108e",
-    "url": "/static/css/main.d9e2c040.chunk.css"
+    "revision": "abb4a309e34c889c0bb9",
+    "url": "/static/css/main.d73affa7.chunk.css"
   },
   {
-    "revision": "c231cb324f4a5c4ae82b",
-    "url": "/static/js/1.c231cb32.chunk.js"
+    "revision": "985c7f0f47f448d1a45f",
+    "url": "/static/js/1.985c7f0f.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/onion.a59694d3.jpg"
   },
   {
-    "revision": "87bf5ac633bad75b108e",
-    "url": "/static/js/main.87bf5ac6.chunk.js"
+    "revision": "abb4a309e34c889c0bb9",
+    "url": "/static/js/main.abb4a309.chunk.js"
   },
   {
     "revision": "75c2cac981ecd69e8ae8e4e3965ff6d5",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/zucchinigoatcheese.e88ab928.jpg"
   },
   {
-    "revision": "4548ae5010ae03a358a573ec1977ddd5",
+    "revision": "cd82d479bd00ae7d02f6c722cf252cc0",
     "url": "/index.html"
   }
 ];
