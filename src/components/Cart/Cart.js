@@ -1,11 +1,22 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom'
-
 import "./cart.css";
 
 class Cart extends Component {
+constructor(props) {
+  super(props);
+  this.state = {
+
+ 
+
+  }
+}
+
+
+
   render() {
     return (
+     
       <div className="container">
         <div className="purchase-card">
           <div className="white-font">
@@ -54,6 +65,7 @@ class Cart extends Component {
           </Link>
         </div>
       </div>
+     
     );
   }
 }
