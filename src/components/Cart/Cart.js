@@ -1,24 +1,9 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom'
 import "./cart.css";
-import { url } from "inspector";
+
 
 class Cart extends Component {
-constructor(props) {
-  super(props);
-  this.state = {
-
-    items: String,
-    Price: Number,
-    Subtotal: Number,
-    Rows: String,
-    Col: String
-
- 
-  }
-}
-
-
 
   render() {
     return (
