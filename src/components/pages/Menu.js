@@ -1,10 +1,59 @@
 import React, { Component } from 'react';
 import "../../index.css";
 import axios from 'axios';
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+
+
 
 
 class Menu extends Component {
+   
+    pizzaCollection = [
+    {
+    "id": "0",
+    "title": "Peppers",
+    "image": "../../images/pepper.jpg",
+    "price": "15.99",
+
+    },
+    {
+    "id": "1",
+    "title": "cheese",
+    "image": "../../images/cheesepizza.jpg", 
+    "price": "15.99",
+    
+     },
+     {
+    "id": "2",
+    "title": "onion",
+    "image": "../../images/onion.jpg", 
+    "price": "15.99",
+        
+         },
+         
+     {
+    "id": "3",
+    "title": "mushroom",
+    "image": "../../images/mushroom.jpg",
+    "price": "15.99",  
+     },
+     {
+    "id": "4",
+    "title": "barbecue",
+    "image": "../../images/barbecued.jpeg",
+    "price": "15.99",  
+         },
+    ]
+
+      
+     
+       
+        
+    
+
+
+
+      
     render() {
         return (
             <div className="font-white-menu">
@@ -15,8 +64,11 @@ class Menu extends Component {
                     </marquee>
                     </div>
                     <h1>The Menu</h1>
+
                 </div>
+              
                 <div className="container">
+
                 <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                     <h4>Pepper Pizza</h4>
                     < img src={require("../../images/pepper.jpg")} alt="pepper pizza" width="200" height="150" />
@@ -109,7 +161,7 @@ class Menu extends Component {
                         <hr />
                         <div>
                             <p>
-                                With Valentine's Day is around the corner,
+                                With Valentines Day around the corner,
                                 These Heart Shaped Pizzas with Heart Shaped Pepperoni are perfect for Valentine’s Day!
                                     The one and only heart shaped pizza is very delicious. Have one  for $15.99
                         </p>
@@ -159,7 +211,7 @@ class Menu extends Component {
                    </p>
                         <hr />
                     </div>
-                    <Link to="/row-8 p-row"> className="onClick btn float-right btn-light"> Order Now</Link>
+                    <Link to="/Cart" className="onClick btn float-right btn-light"> Order Now</Link>
                     <br />
                     <h4>Spinach Pizza</h4>
                     < img src={require("../../images/spinach.jpg")} alt="spinach pizza" width="200" height="150" />
@@ -185,11 +237,18 @@ class Menu extends Component {
                             it’s a lower-carb, lower-calorie way to enjoy pizza and sneak some extra veggies into your diet.
                                 The one and only zucchini Goat Cheese pizza is very delicious. Have one  for $15.99
                     </p>
+                   
                         <hr />
+                       
                     </div>
+                    
                 </div>
-            </div>
-        )
+               
+                </div>
+
+                              
+        );
+      }          
     }
-}
+
 export default Menu;

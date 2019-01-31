@@ -4,6 +4,10 @@ import "./cart.css";
 
 
 class Cart extends Component {
+  
+    
+        
+
 
   render() {
     return (
@@ -54,11 +58,15 @@ class Cart extends Component {
             {" "}
             <h4>logout</h4>
           </Link>
-        </div>
-      </div>
-     
-    );
+          </div>
+          </div>
+      
+   
+     );
+    }
   }
-}
+   
+  
 
-export default Cart;
+
+       export default Cart;
