@@ -178,8 +178,6 @@ updateUser = async newUser => {
           Logout
           </Link>
            <br />
-           <br />
-           <br />
            <button
             className= "btn color-white bg-dark"
             type="submit"
